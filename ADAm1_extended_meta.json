@@ -4,21 +4,42 @@
         "url_png_logo": "http(s) url to pool logo; not animated; max 50kb",
         "location": "Slovak republic, Germany, Asia",
         "social": {
-            "twitter_handle": "ADAm1_pool",
+            "twitter_handle": "ADAm1_pool"
+        },
+        "company": {
+            "name": "Company Name",
+            "addr": "Street, Number",
+            "city": "London",
+            "country": "England",
+            "company_id": "123456789",
+            "vat_id": "GB123456789"
         },
         "about": {
             "me": "...",
-            "server": "Servers",
+            "server": "Professionally administered Servers WorldwiLd :) ",
             "company": "..."
         }
     },
-    "my-pool-ids": {
-        "0": "x..x",
-        "1": "y..y"
+    "telegram-admin-handle": {
+        "0": "@dzanino"
     },
-    "when-satured-then-recommend": {
-        "0": "z...z",
-        "1": "y...y"
+    "adapools_ext": {
+        "prometheus": {
+            "0": {
+                "name": "relay 1 eu",
+                "type": "relay",
+                "key": "example_get_own_on_adapools.org/connect"
+            },
+            "1": {
+                "name": "relay 2 usa",
+                "type": "relay",
+                "key": "example_get_own_on_adapools.org/connect"
+            },
+            "2": {
+                "name": "block producer home",
+                "type": "bp",
+                "key": "example_get_own_on_adapools.org/connect"
+            }
         }
     }
 }
