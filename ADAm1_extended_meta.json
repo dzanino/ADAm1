@@ -1,7 +1,7 @@
 {
     "info": {
-        "url_png_icon_64x64": "http(s) url to pool icon; not animated; max 40kb",
-        "url_png_logo": "http(s) url to pool logo; not animated; max 50kb",
+        "url_png_icon_64x64": "https://pbs.twimg.com/profile_images/1398702205641822218/gq4EfQO2_400x400.jpg",
+        "url_png_logo": "https://pbs.twimg.com/profile_images/1398702205641822218/gq4EfQO2_400x400.jpg",
         "location": "Slovak republic, Germany, Asia",
         "social": {
             "twitter_handle": "ADAm1_pool"
