@@ -2,17 +2,9 @@
     "info": {
         "url_png_icon_64x64": "http(s) url to pool icon; not animated; max 40kb",
         "url_png_logo": "http(s) url to pool logo; not animated; max 50kb",
-        "location": "London, England",
+        "location": "Slovak republic, Germany, Asia",
         "social": {
-            "twitter_handle": "https://twitter.com/ADAm1_pool",
-        },
-        "company": {
-            "name": "Company Name",
-            "addr": "Street, Number",
-            "city": "London",
-            "country": "England",
-            "company_id": "123456789",
-            "vat_id": "GB123456789"
+            "twitter_handle": "ADAm1_pool",
         },
         "about": {
             "me": "...",
@@ -27,5 +19,6 @@
     "when-satured-then-recommend": {
         "0": "z...z",
         "1": "y...y"
+        }
     }
 }
