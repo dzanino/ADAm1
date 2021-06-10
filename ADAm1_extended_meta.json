@@ -1,10 +1,10 @@
 {
     "info": {
-        "url_png_icon_64x64": "https://pbs.twimg.com/profile_images/1398702205641822218/gq4EfQO2_400x400.jpg",
-        "url_png_logo": "https://pbs.twimg.com/profile_images/1398702205641822218/gq4EfQO2_400x400.jpg",
+        "url_png_icon_64x64": "https://twitter.com/ADAm1_pool",
+        "url_png_logo": "https://twitter.com/ADAm1_pool",
         "location": "Slovak republic, Germany, Asia",
         "social": {
-            "twitter_handle": "ADAm1_pool"
+            "twitter_handle": "https://twitter.com/ADAm1_pool"
         },
         "about": {
             "me": "...",
