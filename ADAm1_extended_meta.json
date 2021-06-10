@@ -6,14 +6,6 @@
         "social": {
             "twitter_handle": "ADAm1_pool"
         },
-        "company": {
-            "name": "Company Name",
-            "addr": "Street, Number",
-            "city": "London",
-            "country": "England",
-            "company_id": "123456789",
-            "vat_id": "GB123456789"
-        },
         "about": {
             "me": "...",
             "server": "Professionally administered Servers WorldwiLd :) ",
