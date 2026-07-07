@@ -11,23 +11,24 @@
     />
   </circle>
 
-  <!-- Pulzujúce elipsy krúžiace okolo hlavného kruhu (ružovomodré) -->
+  <!-- 4 pulzujúce elipsy krúžiace okolo hlavného kruhu (ružovomodré) -->
+  <!-- Elipsa 1: Vertikálna, hore -->
   <ellipse cx="250" cy="150" rx="20" ry="40" fill="none" stroke="#ffb3d1" stroke-width="2" opacity="0.8">
     <animate
       attributeName="rx"
       values="20; 30; 20"
-      dur="8s"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      keySplines="0.5 0 0.5 1"
     />
     <animate
       attributeName="ry"
-      values="40; 50; 40"
-      dur="8s"
+      values="40; 60; 40"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      keySplines="0.5 0 0.5 1"
     />
     <animateTransform
       attributeName="transform"
@@ -39,24 +40,25 @@
     />
   </ellipse>
 
+  <!-- Elipsa 2: Vertikálna, dole -->
   <ellipse cx="250" cy="350" rx="20" ry="40" fill="none" stroke="#ffb3d1" stroke-width="2" opacity="0.8">
     <animate
       attributeName="rx"
       values="20; 30; 20"
-      dur="8s"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
-      begin="2s"
+      keySplines="0.5 0 0.5 1"
+      begin="1s"
     />
     <animate
       attributeName="ry"
-      values="40; 50; 40"
-      dur="8s"
+      values="40; 60; 40"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
-      begin="2s"
+      keySplines="0.5 0 0.5 1"
+      begin="1s"
     />
     <animateTransform
       attributeName="transform"
@@ -68,24 +70,25 @@
     />
   </ellipse>
 
+  <!-- Elipsa 3: Horizontálna, vpravo -->
   <ellipse cx="350" cy="250" rx="40" ry="20" fill="none" stroke="#ffb3d1" stroke-width="2" opacity="0.8">
     <animate
       attributeName="rx"
-      values="40; 50; 40"
-      dur="8s"
+      values="40; 60; 40"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
-      begin="4s"
+      keySplines="0.5 0 0.5 1"
+      begin="2s"
     />
     <animate
       attributeName="ry"
       values="20; 30; 20"
-      dur="8s"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
-      begin="4s"
+      keySplines="0.5 0 0.5 1"
+      begin="2s"
     />
     <animateTransform
       attributeName="transform"
@@ -97,24 +100,25 @@
     />
   </ellipse>
 
+  <!-- Elipsa 4: Horizontálna, vľavo -->
   <ellipse cx="150" cy="250" rx="40" ry="20" fill="none" stroke="#ffb3d1" stroke-width="2" opacity="0.8">
     <animate
       attributeName="rx"
-      values="40; 50; 40"
-      dur="8s"
+      values="40; 60; 40"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
-      begin="6s"
+      keySplines="0.5 0 0.5 1"
+      begin="3s"
     />
     <animate
       attributeName="ry"
       values="20; 30; 20"
-      dur="8s"
+      dur="4s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
-      begin="6s"
+      keySplines="0.5 0 0.5 1"
+      begin="3s"
     />
     <animateTransform
       attributeName="transform"
