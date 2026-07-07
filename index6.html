@@ -11,19 +11,43 @@
     />
   </circle>
 
-  <!-- Elipsy pre dýchaciu vlnu (ružovomodrá) -->
-  <ellipse cx="250" cy="250" rx="110" ry="110" fill="none" stroke="#ffb3d1" stroke-width="2" opacity="0.8">
+  <!-- Deformovaná trajektória (linka kruhu) -->
+  <path d="M250,140 A110,110 0 1,1 250,360 A110,110 0 1,1 250,140" fill="none" stroke="#4a6bff" stroke-width="1" opacity="0.5">
     <animate
-      attributeName="ry"
-      values="110; 130; 110; 90; 110"
+      attributeName="d"
+      values="M250,140 A110,110 0 1,1 250,360 A110,110 0 1,1 250,140;
+              M250,140 A120,120 0 1,1 250,360 A100,100 0 1,1 250,140;
+              M250,140 A110,110 0 1,1 250,360 A110,110 0 1,1 250,140"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 250 250"
+      to="360 250 250"
+      dur="16s"
+      repeatCount="indefinite"
+    />
+  </path>
+
+  <!-- Dýchacia vlna elíps od stredového kruhu (odtiene zelenomodrej farby) -->
+  
+  <!-- Elipsa 1: Najbližšie k stredovému kruhu -->
+  <ellipse cx="250" cy="250" rx="130" ry="130" fill="rgba(74, 107, 255, 0.3)" stroke="#5a7bff" stroke-width="1.5" opacity="0.9">
+    <animate
+      attributeName="rx"
+      values="130; 140; 130"
       dur="8s"
       repeatCount="indefinite"
       calcMode="spline"
       keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
     />
     <animate
-      attributeName="rx"
-      values="110; 120; 110; 100; 110"
+      attributeName="ry"
+      values="130; 140; 130"
       dur="8s"
       repeatCount="indefinite"
       calcMode="spline"
@@ -31,10 +55,11 @@
     />
   </ellipse>
 
-  <ellipse cx="250" cy="250" rx="110" ry="110" fill="none" stroke="#ffb3d1" stroke-width="1.5" opacity="0.6">
+  <!-- Elipsa 2: Druhá vlna -->
+  <ellipse cx="250" cy="250" rx="150" ry="150" fill="rgba(74, 107, 255, 0.2)" stroke="#6a8bff" stroke-width="1.5" opacity="0.8">
     <animate
-      attributeName="ry"
-      values="110; 135; 110; 85; 110"
+      attributeName="rx"
+      values="150; 165; 150"
       dur="8s"
       repeatCount="indefinite"
       calcMode="spline"
@@ -42,8 +67,8 @@
       begin="0.5s"
     />
     <animate
-      attributeName="rx"
-      values="110; 125; 110; 95; 110"
+      attributeName="ry"
+      values="150; 165; 150"
       dur="8s"
       repeatCount="indefinite"
       calcMode="spline"
@@ -52,10 +77,11 @@
     />
   </ellipse>
 
-  <ellipse cx="250" cy="250" rx="110" ry="110" fill="none" stroke="#ffb3d1" stroke-width="1" opacity="0.4">
+  <!-- Elipsa 3: Tretia vlna -->
+  <ellipse cx="250" cy="250" rx="170" ry="170" fill="rgba(74, 107, 255, 0.15)" stroke="#7a9bff" stroke-width="1.5" opacity="0.7">
     <animate
-      attributeName="ry"
-      values="110; 140; 110; 80; 110"
+      attributeName="rx"
+      values="170; 185; 170"
       dur="8s"
       repeatCount="indefinite"
       calcMode="spline"
@@ -63,13 +89,35 @@
       begin="1s"
     />
     <animate
-      attributeName="rx"
-      values="110; 130; 110; 90; 110"
+      attributeName="ry"
+      values="170; 185; 170"
       dur="8s"
       repeatCount="indefinite"
       calcMode="spline"
       keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
       begin="1s"
+    />
+  </ellipse>
+
+  <!-- Elipsa 4: Štvrtá vlna (najvonkajšia) -->
+  <ellipse cx="250" cy="250" rx="190" ry="190" fill="rgba(74, 107, 255, 0.1)" stroke="#8aaaff" stroke-width="1.5" opacity="0.6">
+    <animate
+      attributeName="rx"
+      values="190; 205; 190"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1.5s"
+    />
+    <animate
+      attributeName="ry"
+      values="190; 205; 190"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1.5s"
     />
   </ellipse>
 
