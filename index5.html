@@ -1,0 +1,286 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hlavná kružnica (stred) -->
+  <circle cx="250" cy="250" r="110" fill="none" stroke="rgba(74, 107, 255, 0.7)" stroke-width="2">
+    <animate
+      attributeName="r"
+      values="110; 120; 110; 100; 110"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <!-- Jemná ružová kružnica (bublina) -->
+  <circle cx="250" cy="250" r="110" fill="none" stroke="rgba(255, 179, 209, 0.8)" stroke-width="2">
+    <animate
+      attributeName="r"
+      values="110; 120; 110; 100; 110"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <!-- 22 kružníc (alveoly) s dýchacím efektom -->
+  
+  <!-- Vlna 1: Nádych a výdych -->
+  <circle cx="100" cy="100" r="10" fill="rgba(255, 100, 100, 0.6)" stroke="rgba(255, 100, 100, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="10; 25; 10"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <circle cx="400" cy="100" r="12" fill="rgba(100, 255, 100, 0.6)" stroke="rgba(100, 255, 100, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="12; 27; 12"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <circle cx="150" cy="400" r="15" fill="rgba(100, 100, 255, 0.6)" stroke="rgba(100, 100, 255, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="15; 30; 15"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <circle cx="350" cy="400" r="18" fill="rgba(255, 255, 100, 0.6)" stroke="rgba(255, 255, 100, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="18; 33; 18"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <circle cx="200" cy="200" r="14" fill="rgba(255, 100, 255, 0.6)" stroke="rgba(255, 100, 255, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="14; 29; 14"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <circle cx="300" cy="200" r="16" fill="rgba(100, 255, 255, 0.6)" stroke="rgba(100, 255, 255, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="16; 31; 16"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <circle cx="120" cy="300" r="20" fill="rgba(150, 100, 200, 0.6)" stroke="rgba(150, 100, 200, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="20; 35; 20"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <circle cx="380" cy="300" r="12" fill="rgba(200, 200, 100, 0.6)" stroke="rgba(200, 200, 100, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="12; 27; 12"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+    />
+  </circle>
+
+  <!-- Vlna 2: Nádych a výdych (oneskorené) -->
+  <circle cx="80" cy="250" r="19" fill="rgba(100, 200, 200, 0.6)" stroke="rgba(100, 200, 200, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="19; 34; 19"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1s"
+    />
+  </circle>
+
+  <circle cx="420" cy="250" r="21" fill="rgba(200, 200, 200, 0.6)" stroke="rgba(200, 200, 200, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="21; 36; 21"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1s"
+    />
+  </circle>
+
+  <circle cx="180" cy="150" r="17" fill="rgba(255, 200, 100, 0.6)" stroke="rgba(255, 200, 100, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="17; 32; 17"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1s"
+    />
+  </circle>
+
+  <circle cx="320" cy="150" r="13" fill="rgba(200, 100, 255, 0.6)" stroke="rgba(200, 100, 255, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="13; 28; 13"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1s"
+    />
+  </circle>
+
+  <circle cx="130" cy="350" r="20" fill="rgba(100, 100, 200, 0.6)" stroke="rgba(100, 100, 200, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="20; 35; 20"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1s"
+    />
+  </circle>
+
+  <circle cx="370" cy="350" r="15" fill="rgba(150, 150, 150, 0.6)" stroke="rgba(150, 150, 150, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="15; 30; 15"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="1s"
+    />
+  </circle>
+
+  <!-- Vlna 3: Nádych a výdych (ešte oneskorené) -->
+  <circle cx="220" cy="80" r="16" fill="rgba(100, 255, 150, 0.6)" stroke="rgba(100, 255, 150, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="16; 31; 16"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+
+  <circle cx="280" cy="80" r="18" fill="rgba(255, 100, 150, 0.6)" stroke="rgba(255, 100, 150, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="18; 33; 18"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+
+  <circle cx="220" cy="420" r="14" fill="rgba(150, 255, 100, 0.6)" stroke="rgba(150, 255, 100, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="14; 29; 14"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+
+  <circle cx="280" cy="420" r="20" fill="rgba(100, 150, 255, 0.6)" stroke="rgba(100, 150, 255, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="20; 35; 20"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+
+  <circle cx="160" cy="180" r="12" fill="rgba(255, 200, 150, 0.6)" stroke="rgba(255, 200, 150, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="12; 27; 12"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+
+  <circle cx="340" cy="180" r="17" fill="rgba(150, 100, 255, 0.6)" stroke="rgba(150, 100, 255, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="17; 32; 17"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+
+  <circle cx="160" cy="320" r="15" fill="rgba(100, 200, 150, 0.6)" stroke="rgba(100, 200, 150, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="15; 30; 15"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+
+  <circle cx="340" cy="320" r="13" fill="rgba(200, 150, 100, 0.6)" stroke="rgba(200, 150, 100, 0.9)" stroke-width="1">
+    <animate
+      attributeName="r"
+      values="13; 28; 13"
+      dur="8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.2 0 0.8 1; 0.5 0 0.5 1"
+      begin="2s"
+    />
+  </circle>
+</svg>
