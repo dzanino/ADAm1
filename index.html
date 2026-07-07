@@ -1,42 +1,100 @@
 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="250" cy="250" r="220" fill="none" stroke="#4a6bff" stroke-width="4">
+  <!-- Hlavná kružnica (rotuje a mení sa) -->
+  <circle cx="250" cy="250" r="220" fill="none" stroke="#4a6bff" stroke-width="3" opacity="0.7">
     <animateTransform
       attributeName="transform"
       type="rotate"
       from="0 250 250"
       to="360 250 250"
-      dur="4s"
+      dur="6s"
       repeatCount="indefinite"
     />
     <animate
       attributeName="r"
-      values="220; 220; 250; 220; 190; 220"
-      dur="4s"
-      repeatCount="indefinite"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
-    />
-    <animate
-      attributeName="ry"
-      values="220; 220; 220; 250; 220; 190"
-      dur="4s"
+      values="220; 220; 230; 220; 210; 220"
+      dur="6s"
       repeatCount="indefinite"
       calcMode="spline"
       keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
     />
   </circle>
-  <ellipse cx="250" cy="250" rx="220" ry="220" fill="none" stroke="#ff6b4a" stroke-width="2" opacity="0">
+
+  <!-- Prvá elipsa (vyklenutie bruška) -->
+  <ellipse cx="250" cy="250" rx="220" ry="220" fill="none" stroke="#ff6b4a" stroke-width="2" opacity="0.6">
     <animate
-      attributeName="opacity"
-      values="0; 0.8; 0"
-      dur="4s"
+      attributeName="ry"
+      values="220; 260; 220; 180; 220"
+      dur="6s"
       repeatCount="indefinite"
-      begin="0s"
+      calcMode="spline"
+      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
+    />
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 250 250"
+      to="360 250 250"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+  </ellipse>
+
+  <!-- Druhá elipsa (vyklenutie v opačnom smere) -->
+  <ellipse cx="250" cy="250" rx="220" ry="220" fill="none" stroke="#6bff4a" stroke-width="2" opacity="0.6">
+    <animate
+      attributeName="ry"
+      values="220; 180; 220; 260; 220"
+      dur="6s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
+    />
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 250 250"
+      to="-360 250 250"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+  </ellipse>
+
+  <!-- Tretia elipsa (menší vyklenutý efekt) -->
+  <ellipse cx="250" cy="250" rx="220" ry="220" fill="none" stroke="#ff4a6b" stroke-width="1.5" opacity="0.5">
+    <animate
+      attributeName="rx"
+      values="220; 240; 220; 200; 220"
+      dur="6s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
     />
     <animate
       attributeName="ry"
-      values="220; 280; 220"
-      dur="4s"
+      values="220; 200; 220; 240; 220"
+      dur="6s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
+    />
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 250 250"
+      to="360 250 250"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+  </ellipse>
+
+  <!-- Deformovaná trajektória (linka kruhu) -->
+  <path d="M250,30 A220,220 0 1,1 250,470 A220,220 0 1,1 250,30" fill="none" stroke="#6b4aff" stroke-width="1" opacity="0.8">
+    <animate
+      attributeName="d"
+      values="M250,30 A220,220 0 1,1 250,470 A220,220 0 1,1 250,30;
+              M250,30 A220,240 0 1,1 250,470 A220,200 0 1,1 250,30;
+              M250,30 A220,220 0 1,1 250,470 A220,220 0 1,1 250,30"
+      dur="6s"
       repeatCount="indefinite"
       calcMode="spline"
       keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
@@ -46,8 +104,8 @@
       type="rotate"
       from="0 250 250"
       to="360 250 250"
-      dur="4s"
+      dur="6s"
       repeatCount="indefinite"
     />
-  </ellipse>
+  </path>
 </svg>
